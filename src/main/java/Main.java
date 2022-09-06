@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 //        Student student1 = new Student("Pascal", "1");
         ComputerScienceStudent computerScienceStudent = new ComputerScienceStudent("Julia", "2",
-                "Java", "BA");
+                "Java", "BA", "Musterstr. 18", 1234567);
         System.out.println(computerScienceStudent.getDegree());
 
         System.out.println(computerScienceStudent);

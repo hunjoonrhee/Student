@@ -10,7 +10,8 @@ class ComputerScienceStudentTest {
     void getDegreeTestForTrue(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "BA".equals(csstudent.getDegree());
@@ -22,7 +23,8 @@ class ComputerScienceStudentTest {
     void getDegreeTestForFalse(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "MA".equals(csstudent.getDegree());
@@ -34,7 +36,8 @@ class ComputerScienceStudentTest {
     void getIdTestForTrue(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "1".equals(csstudent.getId());
@@ -45,7 +48,8 @@ class ComputerScienceStudentTest {
     void getIdTestForFalse(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "2".equals(csstudent.getId());
@@ -56,7 +60,8 @@ class ComputerScienceStudentTest {
     void getNameTestForTrue(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "John".equals(csstudent.getName());
@@ -67,7 +72,8 @@ class ComputerScienceStudentTest {
     void getNameTestForFalse(){
         //GIVEN
 
-        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1", "Java", "BA");
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
 
         //WHEN
         boolean actual = "john".equals(csstudent.getName());
