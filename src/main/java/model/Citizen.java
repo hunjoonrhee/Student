@@ -2,6 +2,6 @@ package model;
 
 public interface Citizen {
 
-    String getAdress();
+    String getAddress();
     int getIdentifyCardNumber();
 }

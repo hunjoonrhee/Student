@@ -23,11 +23,15 @@ public class ComputerScienceStudent extends Student implements Citizen{
 
     @Override
     public String toString() {
-        return "ComputerScienceStudent{" + "name " + getName() + " id " + getId()+ " " +
-                "programmingLang='" + programmingLang + '\'' + "degree='" + degree + '\'' +
+        return "ComputerScienceStudent{" +
+                "Name=" + getName() +
+                ", id=" + getId() +
+                ", programmingLang='" + programmingLang + '\'' +
+                ", degree='" + degree + '\'' +
+                ", adress='" + adress + '\'' +
+                ", identifyCardNumber=" + identifyCardNumber +
                 '}';
     }
-
 
     @Override
     public String getDegree() {
@@ -36,7 +40,7 @@ public class ComputerScienceStudent extends Student implements Citizen{
     }
 
     @Override
-    public String getAdress() {
+    public String getAddress() {
         return adress;
     }
 

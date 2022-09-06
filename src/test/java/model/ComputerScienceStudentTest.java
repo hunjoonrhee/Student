@@ -81,4 +81,53 @@ class ComputerScienceStudentTest {
         assertFalse(actual);
     }
 
+    @Test
+    void getAdressTestForTrue(){
+        //GIVEN
+
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
+
+        //WHEN
+        boolean actual = "Musterstr. 18".equals(csstudent.getAddress());
+        //THEN
+        assertTrue(actual);
+    }
+    @Test
+    void getAdressTestForFalse(){
+        //GIVEN
+
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
+
+        //WHEN
+        boolean actual = "Musterstr. 17".equals(csstudent.getAddress());
+        //THEN
+        assertFalse(actual);
+    }
+    @Test
+    void getIdentifyCardNumberTestForTrue(){
+        //GIVEN
+
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
+
+        //WHEN
+        boolean actual = 1234567==csstudent.getIdentifyCardNumber();
+        //THEN
+        assertTrue(actual);
+    }
+    @Test
+    void getIdentifyCardNumberTestForFalse(){
+        //GIVEN
+
+        ComputerScienceStudent csstudent = new ComputerScienceStudent("John", "1",
+                "Java", "BA", "Musterstr. 18", 1234567);
+
+        //WHEN
+        boolean actual = 12345678 == csstudent.getIdentifyCardNumber();
+        //THEN
+        assertFalse(actual);
+    }
+
 }
