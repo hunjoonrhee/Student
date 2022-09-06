@@ -1,12 +1,13 @@
 package model;
 
 public class ComputerScienceStudent extends Student{
-
     private String programmingLang;
+    private String degree;
 
-    public ComputerScienceStudent(String name, String id, String programmingLang){
+    public ComputerScienceStudent(String name, String id, String programmingLang, String degree){
         super(name, id);
         this.programmingLang = programmingLang;
+        this.degree = degree;
 
     }
 
@@ -18,7 +19,14 @@ public class ComputerScienceStudent extends Student{
     @Override
     public String toString() {
         return "ComputerScienceStudent{" + "name " + getName() + " id " + getId()+ " " +
-                "programmingLang='" + programmingLang + '\'' +
+                "programmingLang='" + programmingLang + '\'' + "degree='" + degree + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public String getDegree() {
+
+        return degree;
     }
 }

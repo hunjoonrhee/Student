@@ -1,6 +1,6 @@
 package model;
 
-public class Student {
+public abstract class Student {
     private String name;
     private String id;
 
@@ -9,19 +9,21 @@ public class Student {
         this.id = id;
     }
 
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
 
-    public String getId() {
+    public String getId(){
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(String id){
         this.id = id;
     }
+
+    abstract String getDegree();
 }
